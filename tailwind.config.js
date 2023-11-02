@@ -12,6 +12,7 @@ export default {
         lightYellow: "#FFF4DF"
       },
       fontSize: {
+        mobil: "15px"
       },
       screens: {
         dt: "1440px",
