@@ -12,16 +12,18 @@
     >
       {{ text }}
     </p>
-    <GetScootin />
+    <div class="dt:ml-[95px]">
+      <TheButton :button="button" />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import GetScootin from "../../shared/GetScootin.vue";
+import TheButton from "../../shared/TheButton.vue";
 
 export default {
   name: "TheHero",
-  components: { GetScootin },
+  components: { TheButton },
   data() {
     return {
       title: "Scooter sharing made simple",

@@ -1,11 +1,11 @@
 <template>
   <div class="max-w-[1440px] m-auto">
-  <TheHeader />
-  <main>
-    <RouterView />
-  </main>
-  <TheFooter />
-</div>
+    <TheHeader />
+    <main>
+      <RouterView />
+    </main>
+    <TheFooter />
+  </div>
 </template>
 
 <script lang="ts">
@@ -26,15 +26,19 @@ body {
   text-align: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Space Mono", monospace;
 }
 
-@media screen and (min-width: 1440px) {
+p {
+  font-size: 0.9375rem;
+}
 
+@media screen and (min-width: 1440px) {
   body {
     text-align: left;
-
   }
 }
 </style>

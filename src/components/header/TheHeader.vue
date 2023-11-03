@@ -20,7 +20,7 @@
         /></router-link>
         <TheNavigation />
       </div>
-      <GetScootin />
+      <TheButton :button="button" />
     </div>
   </header>
 </template>
@@ -29,7 +29,7 @@
 import logo from "../../assets/logo-black.svg";
 import burger from "../../assets/burger.svg";
 import TheNavigation from "../shared/TheNavigation.vue";
-import GetScootin from "../shared/GetScootin.vue";
+import TheButton from "../shared/TheButton.vue";
 
 export default {
   name: "TheHeader",
@@ -38,6 +38,7 @@ export default {
       logo: logo,
       burger: burger,
       isSmallScreen: false,
+      button: "Get Scootin",
     };
   },
   methods: {
@@ -52,6 +53,6 @@ export default {
   beforeUnmount() {
     window.removeEventListener("resize", this.handleResize);
   },
-  components: { TheNavigation, GetScootin },
+  components: { TheNavigation, TheButton },
 };
 </script>

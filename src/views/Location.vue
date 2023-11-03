@@ -1,14 +1,14 @@
 <template>
     
 <ThePageTitle :title="title" :pageImage="pageImage"/>
-<Content/>
+<LocationsContent/>
 
 </template>
 
 <script lang="ts">
 import ThePageTitle from "../components/shared/ThePageTitle.vue";
 import pageImage from "../assets/page2.webp";
-import Content from "../components/main/locations/Content.vue";
+import LocationsContent from "../components/main/locations/LocationsContent.vue";
 
 export default {
     name: "Location",
@@ -20,7 +20,7 @@ export default {
     },
     components: {
         ThePageTitle,
-        Content
+        LocationsContent
     }
 }
 
