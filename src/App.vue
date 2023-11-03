@@ -1,9 +1,11 @@
 <template>
+  <div class="max-w-[1440px] m-auto">
   <TheHeader />
   <main>
     <RouterView />
   </main>
   <TheFooter />
+</div>
 </template>
 
 <script lang="ts">

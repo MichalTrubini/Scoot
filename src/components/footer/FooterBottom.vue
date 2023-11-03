@@ -1,10 +1,14 @@
 <template>
-  <div class="bg-darkGrey pt-16 pb-[88px]">
-    <router-link to="/"
-      ><img :src="logo" alt="logo" class="m-auto"
-    /></router-link>
-    <TheNavigation />
-    <div class="flex justify-center gap-5 mt-10">
+  <div
+    class="bg-darkGrey pt-16 pb-[88px] md:flex md:items-center md:justify-between md:px-10 md:py-8 dt:px-[165px]"
+  >
+    <div class="md:flex md:items-center md:gap-[60px]">
+      <router-link to="/"
+        ><img :src="logo" alt="logo" class="m-auto"
+      /></router-link>
+      <TheNavigation />
+    </div>
+    <div class="flex justify-center gap-5 mt-10 md:mt-0">
       <img :src="facebook" alt="facebook" />
       <img :src="twitter" alt="twitter" />
       <img :src="instagram" alt="instagram" />
