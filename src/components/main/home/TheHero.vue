@@ -12,17 +12,16 @@
     >
       {{ text }}
     </p>
-    <button
-      class="bg-yellow text-white text-mobil py-[14px] px-[39px] dt:ml-[95px]"
-    >
-      {{ button }}
-    </button>
+    <GetScootin />
   </div>
 </template>
 
 <script lang="ts">
+import GetScootin from "../../shared/GetScootin.vue";
+
 export default {
   name: "TheHero",
+  components: { GetScootin },
   data() {
     return {
       title: "Scooter sharing made simple",
