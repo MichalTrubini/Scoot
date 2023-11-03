@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo-black.svg";
 import burger from "../../assets/burger.svg";
 
 export default {

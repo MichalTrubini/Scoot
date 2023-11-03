@@ -1,18 +1,18 @@
 <template>
   <TheHeader />
   <main>
-    <TheHero />
+    <RouterView />
   </main>
+  <TheFooter />
 </template>
 
 <script lang="ts">
 import TheHeader from "./components/header/TheHeader.vue";
-import TheHero from "./components/main/home/TheHero.vue";
-
+import TheFooter from "./components/footer/TheFooter.vue";
 export default {
   components: {
     TheHeader,
-    TheHero,
+    TheFooter,
   },
 };
 </script>

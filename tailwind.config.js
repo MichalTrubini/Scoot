@@ -9,7 +9,8 @@ export default {
         dimGrey:"#939CAA",
         lightGrey:"#E5ECF4",
         snow: "#F2F5F9",
-        lightYellow: "#FFF4DF"
+        lightYellow: "#FFF4DF",
+        darkGrey: "#333A44",
       },
       fontSize: {
         mobil: "15px"
