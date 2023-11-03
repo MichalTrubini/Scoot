@@ -1,8 +1,20 @@
 <template>
-  <div class="px-8 pt-[115px] pb-[180px] backgroundImage relative">
-    <h1 class="text-white text-[40px] leading-10 mb-6">{{ title }}</h1>
-    <p class="text-white text-mobil leading-6 mb-8">{{ text }}</p>
-    <button class="bg-yellow text-white text-mobil py-[14px] px-[39px]">
+  <div
+    class="px-8 pt-[115px] pb-[180px] backgroundImage relative md:pt-[137px] md:pb-[217px] dt:py-[153px] dt:px-[165px]"
+  >
+    <h1
+      class="text-white text-[40px] leading-10 mb-6 md:text-[56px] md:leading-[56px] md:w-[550px] md:mx-auto dt:mx-0 dt:mb-10"
+    >
+      {{ title }}
+    </h1>
+    <p
+      class="text-white text-mobil leading-6 mb-8 md:w-[550px] md:mx-auto dt:mx-0 dt:pl-[95px] dt:mb-10"
+    >
+      {{ text }}
+    </p>
+    <button
+      class="bg-yellow text-white text-mobil py-[14px] px-[39px] dt:ml-[95px]"
+    >
       {{ button }}
     </button>
   </div>
@@ -25,5 +37,22 @@ export default {
 .backgroundImage {
   background: url("../../../assets/arrow1.svg") -300px 95% no-repeat,
     url("../../../assets/hero.webp") right/cover no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .backgroundImage {
+    background: url("../../../assets/arrow1.svg") -120px 95% no-repeat,
+      url("../../../assets/heroCircles.svg") right 93% no-repeat,
+      url("../../../assets/hero.webp") 80% no-repeat;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .backgroundImage {
+    background: url("../../../assets/arrow1.svg") 75% 67% no-repeat,
+      url("../../../assets/line.svg") 0% 53% no-repeat,
+      url("../../../assets/heroCircles.svg") right 70% no-repeat,
+      url("../../../assets/hero.webp") 80% no-repeat;
+  }
 }
 </style>

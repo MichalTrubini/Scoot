@@ -29,4 +29,12 @@ body {
 h1 {
   font-family: "Space Mono", monospace;
 }
+
+@media screen and (min-width: 1440px) {
+
+  body {
+    text-align: left;
+
+  }
+}
 </style>
