@@ -1,10 +1,9 @@
 <template>
   <Template
-    :headerIntroduction="headerIntroduction"
-    :textIntroduction="textIntroduction"
-    :button="button"
+    :title="headerIntroduction"
+    :text="textIntroduction"
     :show="show"
-    :imageOne="careerImage"
+    :image="careerImage"
     :buttonText="button"
     :customClass="customClass"
     :flexFlow="`dt:flex-row-reverse dt:pl-[165px]`"

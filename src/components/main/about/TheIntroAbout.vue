@@ -1,18 +1,18 @@
 <template>
   <div class="flex flex-col gap-[90px]">
   <Template
-    :headerIntroduction="headerIntroduction1"
-    :textIntroduction="textIntroduction1"
+    :header="headerIntroduction1"
+    :text="textIntroduction1"
     :show="show"
-    :imageOne="mobility"
+    :image="mobility"
     :customClass="customClass1"
     :flexFlow="`dt:flex-row-reverse dt:pl-[165px]`"
   ></Template>
   <Template
-    :headerIntroduction="headerIntroduction2"
-    :textIntroduction="textIntroduction2"
+    :header="headerIntroduction2"
+    :text="textIntroduction2"
     :show="show"
-    :imageOne="living"
+    :image="living"
     :customClass="customClass2"
     :flexFlow="`dt:flex-row dt:pr-[165px]`"
   ></Template>
