@@ -14,7 +14,7 @@
     props: {
       button: {
         type: String,
-        required: true,
+        required: false,
       },
       customClass: {
         type: String,
