@@ -84,7 +84,7 @@ export default {
   z-index: 99;
   width: 100%;
   height: 100%;
-  background: url("../../../assets/arrow4.svg") right 110% bottom 100% / 180%
+  background: url("../../../assets/arrow5.svg") left 0% bottom 100% / 90%
     no-repeat;
 }
 
