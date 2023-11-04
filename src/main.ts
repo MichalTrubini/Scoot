@@ -16,6 +16,10 @@ const router = createRouter({
         { path: '/location', component: Location },
         { path: '/careers', component: Careers },
     ],
+    scrollBehavior() {
+        // Scroll to the top of the page when navigating between routes
+        return { top: 0, behavior: 'smooth' };
+      },
     })
 app.use(router)
 app.mount('#app')

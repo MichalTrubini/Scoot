@@ -1,5 +1,5 @@
 <template>
-  <section class="dt:px-[165px]">
+  <section class="dt:px-[165px] mt-[120px]">
     <div>
       <h2 class="text-[32px] text-navy mb-[64px] md:text-5xl md:mb-[87px] dt:text-center">
         {{ heading }}
@@ -25,15 +25,17 @@
 </template>
 
 <script lang="ts">
-import join1 from "../../../assets/join1.webp";
-import join2 from "../../../assets/join2.webp";
-import join3 from "../../../assets/join3.webp";
+import join1 from "../../assets/join1.webp";
+import join2 from "../../assets/join2.webp";
+import join3 from "../../assets/join3.webp";
 
 export default {
-  name: "TheJoin",
+  name: "TheValues",
+  props: {
+    heading: String
+  },
   data() {
     return {
-      heading: "Why join us?",
       content: [
         {
           img: join1,

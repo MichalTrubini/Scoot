@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col gap-[56px] mb-[120px] dt:pl-[165px] dt:flex-row-reverse dt:items-center dt:justify-between"
+    class="flex flex-col gap-[56px] dt:items-center dt:justify-between" :class="flexFlow"
   >
     <div class="relative px-8 dt:px-0 dt:max-w-[750px] dt:w-full">
       <img
@@ -44,6 +44,7 @@ export default {
     imageOne: String,
     buttonText: String,
     customClass: String,
+    flexFlow: String,
   },
 };
 </script>

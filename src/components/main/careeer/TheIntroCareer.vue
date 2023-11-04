@@ -1,5 +1,14 @@
 <template>
-  <Template :headerIntroduction="headerIntroduction" :textIntroduction="textIntroduction" :button="button" :show="show" :imageOne="careerImage" :buttonText="button" :customClass="customClass"></Template>
+  <Template
+    :headerIntroduction="headerIntroduction"
+    :textIntroduction="textIntroduction"
+    :button="button"
+    :show="show"
+    :imageOne="careerImage"
+    :buttonText="button"
+    :customClass="customClass"
+    :flexFlow="`dt:flex-row-reverse dt:pl-[165px]`"
+  ></Template>
 </template>
 
 <script lang="ts">
@@ -8,7 +17,7 @@ import TheButton from "../../shared/TheButton.vue";
 import arrow from "../../../assets/arrow4.svg";
 import Template from "../../shared/Template.vue";
 export default {
-  name: "CareerIntro",
+  name: "TheIntroCareer",
   components: {
     TheButton,
     Template,
@@ -22,13 +31,13 @@ export default {
         "We're always looking for ambitious individuals to help us on our journey. If you're passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!",
       button: "Say Hello",
       show: true,
-      customClass: "arrowTop",
+      customClass: "arrowOne",
     };
   },
 };
 </script>
 
-<style >
+<style>
 .arrowOne {
   position: absolute;
   top: 0;
@@ -52,8 +61,7 @@ export default {
   .arrowOne {
     background: url("../../../assets/arrow4.svg") right 100% bottom 0% / 100%
         no-repeat,
-      url("../../../assets/introCircle.svg") right -3% bottom 50% / 100px
-        no-repeat;
+      url("../../../assets/introCircle.svg") right -3% bottom 50% / 100px no-repeat;
   }
 }
 </style>
