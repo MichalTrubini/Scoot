@@ -22,7 +22,6 @@ export default {
 <style>
 body {
   font-family: "Lexend Deca", sans-serif;
-
   text-align: center;
 }
 

@@ -6,6 +6,9 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Location from './views/Location.vue'
 import Careers from './views/Careers.vue'
+import Accordion from 'primevue/accordion';
+import AccordionTab from 'primevue/accordiontab';
+import "primevue/resources/themes/bootstrap4-light-blue/theme.css"
 
 const app = createApp(App)
 const router = createRouter({
@@ -22,4 +25,6 @@ const router = createRouter({
       },
     })
 app.use(router)
+app.component('Accordion', Accordion);
+app.component('AccordionTab', AccordionTab);
 app.mount('#app')

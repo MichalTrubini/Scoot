@@ -820,6 +820,11 @@ postcss@^8.4.23, postcss@^8.4.27, postcss@^8.4.31:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
+primevue@^3.39.0:
+  version "3.39.0"
+  resolved "https://registry.yarnpkg.com/primevue/-/primevue-3.39.0.tgz#e0ed611dcfa695e99778a453c228cad86a0711d3"
+  integrity sha512-fDaK/SHijvw5ds3RNs4yzPgVFyA1/RYXxnEshHME1zhn9/HiTxEqa0Wv3obbuwSmRckA4fdGh+lZ8dDd1RJJLQ==
+
 queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
