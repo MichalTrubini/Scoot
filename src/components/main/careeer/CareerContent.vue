@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-[72px]">
+  <div class="pt-[72px] md:pt-[120px]">
     <TheIntro />
     <TheJoin />
     <TheRoles />

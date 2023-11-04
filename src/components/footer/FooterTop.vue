@@ -3,7 +3,7 @@
     class="bg-navy py-[88px] px-8 md:py-[62px] lg:flex lg:items-center lg:py-[102px] lg:justify-between dt:px-[165px] footerTop"
   >
     <h3
-      class="text-white text-[32px] leading-8 mb-10 md:text-5xl md:w-[425px] md:m-auto md:leading-[48px] lg:text-left lg:m-0"
+      class="text-white text-[32px] leading-8 mb-10 md:text-5xl md:w-[425px] md:m-auto md:leading-[48px] lg:text-left lg:m-0 dt:tracking-tighter"
     >
       Sign up and Scoot off today
     </h3>

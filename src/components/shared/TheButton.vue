@@ -1,6 +1,7 @@
 <template>
     <button
       class="bg-yellow text-white text-mobil py-[14px] px-[39px] "
+      :class="customClass"
     >
       {{ button }}
     </button>
@@ -14,6 +15,10 @@
       button: {
         type: String,
         required: true,
+      },
+      customClass: {
+        type: String,
+        default: "",
       },
     },
   };
