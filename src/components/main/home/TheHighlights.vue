@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col gap-[120px] mb-[120px] dt:mb-[180px]">
+  <section class="flex flex-col gap-[120px] mb-[120px] dt:mb-[180px] dt:gap-[160px]">
     <div v-for="(highlight, index) in highlights" :key="index">
       <Template
         :title="highlight.title"

@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col gap-[48px] my-[120px] px-8 md:px-[97px] dt:flex-row dt:px-[165px] dt:my-[160px]">
+  <section class="flex flex-col gap-[48px] my-[120px] px-8 md:px-[97px] dt:flex-row dt:px-[165px] dt:mt-[160px] dt:mb-[200px]">
     <div
       v-for="(step, index) in process"
       :key="index"
