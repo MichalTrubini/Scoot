@@ -51,7 +51,7 @@ export default {
 .arrowTwo {
   position: absolute;
   top: 0;
-  z-index: 99;
+  z-index: 9;
   width: 100%;
   height: 100%;
   transform: rotateX(180deg);
@@ -81,7 +81,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 9;
   width: 100%;
   height: 100%;
   background: url("../../../assets/arrow5.svg") left 0% bottom 100% / 90%

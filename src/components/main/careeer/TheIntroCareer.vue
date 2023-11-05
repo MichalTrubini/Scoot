@@ -40,7 +40,7 @@ export default {
 .arrowOne {
   position: absolute;
   top: 0;
-  z-index: 99;
+  z-index: 9;
   width: 100%;
   height: 100%;
   background: url("../../../assets/arrow4.svg") right 100% bottom 15% / 150%

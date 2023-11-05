@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-[1440px] m-auto overflow-hidden">
     <TheHeader />
-    <main>
+    <main class="mt-[64px]">
       <router-view v-slot="slotProps">
         <transition name="fade-button" mode="out-in">
           <component :is="slotProps.Component"></component> </transition
@@ -16,6 +16,7 @@ import TheHeader from "./components/header/TheHeader.vue";
 import TheFooter from "./components/footer/TheFooter.vue";
 import { ref, onBeforeMount, onBeforeUnmount, provide } from "vue";
 import { calculateIsSmallScreen } from "./functions/functions";
+
 export default {
   components: {
     TheHeader,
@@ -23,14 +24,16 @@ export default {
   },
   setup() {
     const isSmallScreen = ref(calculateIsSmallScreen());
+    const screenHeight = ref(window.innerHeight);
+    const headerHeight = 64;
 
     const handleResize = () => {
       isSmallScreen.value = calculateIsSmallScreen();
+      screenHeight.value = window.innerHeight;
     };
 
     onBeforeMount(() => {
       window.addEventListener("resize", handleResize);
-      console.log(isSmallScreen.value)
     });
 
     onBeforeUnmount(() => {
@@ -38,9 +41,13 @@ export default {
     });
 
     provide("isSmallScreen", isSmallScreen);
+    provide("screenHeight", screenHeight);
+    provide("headerHeight", headerHeight);
 
     return {
       isSmallScreen,
+      screenHeight,
+      headerHeight,
     };
   },
 };
