@@ -19,7 +19,7 @@ const router = createRouter({
         { path: '/location', component: Location },
         { path: '/careers', component: Careers },
     ],
-    scrollBehavior(to, from, savedPosition) {
+    scrollBehavior(_to, _from, savedPosition) {
         if (savedPosition) {
           // If a saved position exists, scroll to it without delay
           return savedPosition;
