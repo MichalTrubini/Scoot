@@ -11,9 +11,9 @@
         <img :src="step.img" alt="highlight" />
       </div>
       <div class="md:text-left md:w-[70%] dt:w-full">
-        <h3 class="text-navy text-xl mb-6 md:text-2xl">
+        <h2 class="text-navy text-xl mb-6 md:text-2xl">
           {{ step.title }}
-        </h3>
+        </h2>
         <p class="text-dimGrey">{{ step.description }}</p>
       </div>
     </div>
