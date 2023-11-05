@@ -11,7 +11,6 @@ import AccordionTab from 'primevue/accordiontab';
 import "primevue/resources/themes/bootstrap4-light-blue/theme.css"
 
 const app = createApp(App)
-const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -26,8 +25,10 @@ const router = createRouter({
           return savedPosition;
         } else {
           // Scroll to the top of the page with a delay
-          return delay(50).then(() => {
-            return { top: 0, behavior: 'smooth' };
+          return new Promise((resolve) => {
+            setTimeout(() => {
+              resolve({ top: 0, behavior: 'smooth' });
+            }, 50);
           });
         }
       }
