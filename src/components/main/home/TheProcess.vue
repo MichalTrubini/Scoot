@@ -6,7 +6,7 @@
       class="md:flex md:items-start md:gap-[80px] dt:flex-col dt:gap-[40px]"
     >
       <div
-        class="bg-yellow w-[56px] h-[56px] rounded-full flex items-center justify-center mx-auto mb-6 customLine relative dt:mx-0"
+        class="bg-yellow w-[56px] h-[56px] rounded-full flex items-center justify-center mx-auto mb-6 customLine relative dt:mx-0 dt:w-[96px] dt:h-[96px]"
       >
         <img :src="step.img" alt="highlight" />
       </div>
@@ -71,9 +71,9 @@ export default {
   .customLine::before {
     right: 56px;
     bottom: 0;
-    top: 23px;
+    top: 43px;
     width: 400px;
-    height: 10px;
+    height: 15px;
 
   }
 }

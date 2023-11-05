@@ -16,7 +16,7 @@
     <div v-else class="flex items-center justify-between">
       <div class="flex gap-[60px] items-center">
         <router-link to="/"
-          ><img :src="logo" alt="Vue logo" class="w-[75px] h-[20px] relative top-[-3px]"
+          ><img :src="logo" alt="Vue logo" class="w-[75px] h-[20px] relative top-[-3px] dt:w-[107px] dt:h-[28px]"
         /></router-link>
         <TheNavigation />
       </div>

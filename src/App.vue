@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-[1440px] m-auto overflow-hidden">
     <TheHeader />
-    <main class="mt-[64px]">
+    <main class="mt-[64px] dt:mt-[95px]">
       <router-view v-slot="slotProps">
         <transition name="fade-button" mode="out-in">
           <component :is="slotProps.Component"></component> </transition
