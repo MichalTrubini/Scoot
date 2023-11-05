@@ -30,28 +30,16 @@ import logo from "../../assets/logo-black.svg";
 import burger from "../../assets/burger.svg";
 import TheNavigation from "../shared/TheNavigation.vue";
 import TheButton from "../shared/TheButton.vue";
-
+import { inject } from "vue";
 export default {
   name: "TheHeader",
   data() {
     return {
       logo: logo,
       burger: burger,
-      isSmallScreen: false,
+      isSmallScreen: inject("isSmallScreen"),
       button: "Get Scootin",
     };
-  },
-  methods: {
-    handleResize() {
-      this.isSmallScreen = window.innerWidth < 768;
-    },
-  },
-  mounted() {
-    this.isSmallScreen = window.innerWidth < 768;
-    window.addEventListener("resize", this.handleResize);
-  },
-  beforeUnmount() {
-    window.removeEventListener("resize", this.handleResize);
   },
   components: { TheNavigation, TheButton },
 };

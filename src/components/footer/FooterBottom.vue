@@ -9,9 +9,9 @@
       <TheNavigation />
     </div>
     <div class="flex justify-center gap-5 mt-10 md:mt-0">
-      <img :src="facebook" alt="facebook" />
-      <img :src="twitter" alt="twitter" />
-      <img :src="instagram" alt="instagram" />
+      <img :src="facebook" alt="facebook" class="social hover:cursor-pointer"/>
+      <img :src="twitter" alt="twitter" class="social hover:cursor-pointer"/>
+      <img :src="instagram" alt="instagram" class="social hover:cursor-pointer"/>
     </div>
   </div>
 </template>
@@ -37,3 +37,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.social:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(103deg) brightness(100%) contrast(100%);
+}
+
+</style>

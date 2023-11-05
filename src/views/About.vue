@@ -1,6 +1,8 @@
 <template>
-  <ThePageTitle :title="title" :pageImage="pageImage" />
-  <AboutContent />
+  <div>
+    <ThePageTitle :title="title" :pageImage="pageImage" />
+    <AboutContent />
+  </div>
 </template>
 
 <script lang="ts">

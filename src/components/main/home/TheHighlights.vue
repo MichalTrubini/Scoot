@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col gap-[120px] mb-[120px]">
+  <section class="flex flex-col gap-[120px] mb-[120px] dt:mb-[180px]">
     <div v-for="(highlight, index) in highlights" :key="index">
       <Template
         :title="highlight.title"
@@ -63,13 +63,13 @@ export default {
   z-index: 99;
   width: 100%;
   height: 100%;
-  background: url("../../../assets/arrow4.svg") right 100% bottom 15% / 150%
+  background: url("../../../assets/arrow4.svg") right 170% bottom 75% / 160%
     no-repeat;
 }
 
 @media screen and (min-width: 768px) {
-  .arrowOne {
-    background: url("../../../assets/arrow4.svg") right 100% bottom 0% / 100%
+  .arrowFour {
+    background: url("../../../assets/arrow6.svg") right 0% bottom 95% / 60%
         no-repeat,
       url("../../../assets/introCircle.svg") right 0% bottom 50% / 118px
         no-repeat;
@@ -77,8 +77,8 @@ export default {
 }
 
 @media screen and (min-width: 1440px) {
-  .arrowOne {
-    background: url("../../../assets/arrow4.svg") right 100% bottom 0% / 100%
+  .arrowFour {
+    background: url("../../../assets/arrow6.svg") right 0% bottom 95% / 50%
         no-repeat,
       url("../../../assets/introCircle.svg") right -3% bottom 50% / 100px no-repeat;
   }

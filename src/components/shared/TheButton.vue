@@ -1,6 +1,6 @@
 <template>
     <button
-      class="bg-yellow text-white text-mobil py-[14px] px-[39px] "
+      class="bg-yellow text-white text-mobil py-[14px] px-[39px] hover:bg-inherit hover:text-yellow hover:outline hover:outline-4 hover:outline-yellow"
       :class="customClass"
     >
       {{ button }}

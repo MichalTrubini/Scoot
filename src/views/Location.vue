@@ -1,8 +1,8 @@
 <template>
-    
+    <div>
 <ThePageTitle :title="title" :pageImage="pageImage"/>
 <LocationsContent/>
-
+</div>
 </template>
 
 <script lang="ts">

@@ -1,5 +1,7 @@
 <template>
-  <HomeContent />
+  <div>
+    <HomeContent />
+  </div>
 </template>
 
 <script lang="ts">
@@ -9,7 +11,7 @@ import HomeContent from "../components/main/home/HomeContent.vue";
 export default {
   components: {
     TheHero,
-    HomeContent
+    HomeContent,
   },
 };
 </script>

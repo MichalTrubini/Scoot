@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col gap-[90px]">
   <Template
-    :header="headerIntroduction1"
+    :title="headerIntroduction1"
     :text="textIntroduction1"
     :show="show"
     :image="mobility"
@@ -9,7 +9,7 @@
     :flexFlow="`dt:flex-row-reverse dt:pl-[165px]`"
   ></Template>
   <Template
-    :header="headerIntroduction2"
+    :title="headerIntroduction2"
     :text="textIntroduction2"
     :show="show"
     :image="living"

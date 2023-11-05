@@ -1,7 +1,8 @@
 <template>
-    <ThePageTitle :title="title" :pageImage="pageImage"/>
+  <div>
+    <ThePageTitle :title="title" :pageImage="pageImage" />
     <CareerContent />
-
+  </div>
 </template>
 
 <script lang="ts">
@@ -10,17 +11,16 @@ import pageImage from "../assets/page2.webp";
 import CareerContent from "../components/main/careeer/CareerContent.vue";
 
 export default {
-    name: "Location",
-    data() {
-        return {
-            title: "Careers",
-            pageImage: pageImage
-        }
-    },
-    components: {
-        ThePageTitle,
-        CareerContent
-    }
-}
-
+  name: "Location",
+  data() {
+    return {
+      title: "Careers",
+      pageImage: pageImage,
+    };
+  },
+  components: {
+    ThePageTitle,
+    CareerContent,
+  },
+};
 </script>

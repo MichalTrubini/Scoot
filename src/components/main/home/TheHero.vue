@@ -1,25 +1,30 @@
 <template>
   <div
-    class="px-8 pt-[115px] pb-[180px] backgroundImage relative md:pt-[137px] md:pb-[217px] dt:py-[153px] dt:px-[165px]"
+    class="px-8 pb-[65px] backgroundImage relative md:pt-[137px] md:pb-[217px] dt:py-[153px] dt:px-[165px] flex flex-col justify-center"
+    :style="{ height: isSmallScreen ? screenHeight + 'px' : 'auto' }"
+    ref="heroElement"
   >
-    <h1
-      class="text-white text-[40px] leading-10 mb-6 md:text-[56px] md:leading-[56px] md:w-[550px] md:mx-auto dt:mx-0 dt:mb-10"
-    >
-      {{ title }}
-    </h1>
-    <p
-      class="text-white text-mobil leading-6 mb-8 md:w-[550px] md:mx-auto dt:mx-0 dt:pl-[95px] dt:mb-10"
-    >
-      {{ text }}
-    </p>
-    <div class="dt:ml-[95px]">
-      <TheButton :button="button" />
+    <div>
+      <h1
+        class="text-white text-[40px] leading-10 mb-6 md:text-[56px] md:leading-[56px] md:w-[550px] md:mx-auto dt:mx-0 dt:mb-10"
+      >
+        {{ title }}
+      </h1>
+      <p
+        class="text-white text-mobil leading-6 mb-8 md:w-[550px] md:mx-auto dt:mx-0 dt:pl-[95px] dt:mb-10"
+      >
+        {{ text }}
+      </p>
+      <div class="dt:ml-[95px]">
+        <TheButton :button="button" />
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import TheButton from "../../shared/TheButton.vue";
+import { inject } from "vue";
 
 export default {
   name: "TheHero",
@@ -29,7 +34,30 @@ export default {
       title: "Scooter sharing made simple",
       text: " Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!",
       button: "Get Scootin",
+      headerHeight: 64,
+      screenHeight: 0,
+      isSmallScreen: inject('isSmallScreen'),
     };
+  },
+  methods: {
+    updateScreenHeight() {
+      this.screenHeight = window.innerHeight - this.headerHeight;
+    },
+  },
+  watch: {
+    screenHeight(newHeight) {
+      const heroElement = this.$refs.heroElement as HTMLElement;
+      if (heroElement) {
+        heroElement.style.height = newHeight + "px";
+      }
+    },
+  },
+  created() {
+    this.updateScreenHeight(); // Initial height calculation
+    window.addEventListener("resize", this.updateScreenHeight);
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.updateScreenHeight);
   },
 };
 </script>

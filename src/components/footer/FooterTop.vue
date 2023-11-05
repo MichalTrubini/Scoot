@@ -11,12 +11,12 @@
       <img
         :src="appleStore"
         alt="appleStore"
-        class="inline-block w-[114px] h-10"
+        class="inline-block w-[114px] h-10 hover:cursor-pointer"
       />
       <img
         :src="googlePlay"
         alt="googlePlay"
-        class="inline-block w-[130px] h-10"
+        class="inline-block w-[130px] h-10 hover:cursor-pointer"
       />
     </div>
   </div>
